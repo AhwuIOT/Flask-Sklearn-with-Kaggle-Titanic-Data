@@ -8,8 +8,8 @@ app = Flask(__name__)
 api = Api(app)
 
 # Load pipeline and model using the binary files
-model = pickle.load(open('model.pkl', 'rb'))
-pipeline = pickle.load(open('pipeline.pkl', 'rb'))
+model = pickle.load(open('./model/rad_model.pkl', 'rb'))
+pipeline = pickle.load(open('./model/pipeline.pkl', 'rb'))
 
 # Function to test if the request contains multiple 
 def islist(obj):
